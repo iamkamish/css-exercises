@@ -1,3 +1,4 @@
+/* *** My attempt after seeing the solution: *** */
 body {
   background: gray;
   font-family: sans-serif;
@@ -7,14 +8,80 @@ body {
   width: 400px;
   background: white;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title,
 .content,
 .button-container {
   background: dodgerblue;
+  padding: 8px;
 }
 
 button {
   background: white;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+
+  /* 
+  My idea of implementing this with a fixed width is bad.
+  The correct way to do it is with `padding: 8px 24px`(see the TOP solution). 
+  */
+  width: 120px;
 }
+
+.title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.content {
+  margin-bottom: 8px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+/* 
+ *** My attempt without having seen the solution: ***
+
+body {
+  background: gray;
+  font-family: sans-serif;
+
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.card {
+  width: 400px;
+  background: white;
+  margin: 16px auto;  
+  padding: 10px 5px 5px 5px;
+}
+
+.title,
+.content,
+.button-container {
+  background: dodgerblue;  
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.button-container {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+button {
+  background: white;
+  display: block;
+  height: 40px;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
+  */
