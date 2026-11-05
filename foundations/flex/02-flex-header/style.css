@@ -1,6 +1,10 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo {
@@ -14,7 +18,19 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  /* My initial attempt to align the ‘left-links’ to the left-hand edge of the header
+  padding-left: 5px; */
 }
+
+/* My initial attempt to create a space between the ‘li’ elements, 
+as I wasn’t familiar with the ‘gap’ property: 
+li {
+  margin-right: 15px;
+} */
 
 a {
   font-size: 22px;
