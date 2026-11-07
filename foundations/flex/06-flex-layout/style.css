@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +26,42 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/list-style */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  /* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Styling_links */
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  /* This is required to make full use of the available height for the content 
+  https://developer.mozilla.org/de/docs/Web/CSS/Reference/Properties/flex */
+  flex: auto;
+  /* equals 1 1 auto (flex-grow | flex-shrink | flex-basis) */
 }
